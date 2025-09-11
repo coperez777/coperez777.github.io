@@ -23,3 +23,18 @@ img {
 .shadow{
     text-shadow: 2px 2px 2px rgb(128, 5, 69);
 }
+main {
+    clear: left;
+}
+h3 {
+    margin-top: 3em;
+    font-style: italic;
+    font-size: 105%;
+}
+ul {
+    line-height: 1.5em;
+}
+footer {
+    text-align: center;
+    font-size: 80%;
+}
