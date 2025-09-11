@@ -7,3 +7,13 @@ a:focus, a:hover {
     font-style: italic;
     color: purple;
 }
+h1 {
+    font-size: 175%;
+    color: maroon;
+    text-indent: 30px;
+}
+h2 {
+    font-size: 130;
+    color: #00000123;
+    text-indent: 30px;
+}
