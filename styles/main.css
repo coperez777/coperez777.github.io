@@ -26,12 +26,12 @@ img {
 main {
     clear: left;
 }
-h3 {
+main h3 {
     margin-top: 3em;
     font-style: italic;
     font-size: 105%;
 }
-ul {
+#list {
     line-height: 1.5em;
 }
 footer {
