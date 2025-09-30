@@ -16,7 +16,7 @@ body {
     background-repeat: repeat-y;
     background-attachment: fixed;
 }
-header { 
+article { 
     clear: both;
     border-top:  2px solid red;
 }
