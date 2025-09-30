@@ -67,3 +67,11 @@ aside {
     float: right;
     background-color: aquamarine;
 }
+footer { 
+    clear: both;
+    border-top:  2px solid red;
+}
+p.fixed {
+    width: auto;
+    
+}
