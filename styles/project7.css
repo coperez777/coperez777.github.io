@@ -16,11 +16,6 @@ body {
     background-repeat: repeat-y;
     background-attachment: fixed;
 }
-article { 
-    clear: both;
-    border-top:  2px solid red;
-    border-width: ;
-}
 a:focus, a:hover {
     font-style: italic;
     color: purple;
