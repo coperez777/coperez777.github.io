@@ -87,9 +87,6 @@ p.fixed {
     bottom: 405px;
     right: 45px;
     background-color: aquamarine;
-    padding-left: 1em;
-    padding-bottom: 1em;
-    padding-top: 1em;
-    padding-right: 1em;
+    padding: 1em;
 
 }
