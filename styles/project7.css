@@ -86,6 +86,6 @@ p.fixed {
     position: fixed;
     bottom: 405px;
     right: 45px;
-    background-color: aquamarine;
+    border-width: 15px;
 
 }
