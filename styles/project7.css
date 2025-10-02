@@ -70,7 +70,8 @@ aside {
     width: 20%;
     float: right;
     background-color: aquamarine;
-    padding-left: 2em;
+    padding-left: 1em;
+    padding-bottom: 1em;
 }
 footer { 
     clear: both;
