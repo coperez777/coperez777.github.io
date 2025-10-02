@@ -89,5 +89,6 @@ p.fixed {
     background-color: aquamarine;
     padding: 2em;
     border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
 
 }
