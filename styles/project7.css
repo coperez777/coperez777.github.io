@@ -92,4 +92,5 @@ p.fixed {
     box-shadow: 2px 2px 5px gray;
     border-color: red;
     border-width: 2px;
+    border-style: solid;
 }
