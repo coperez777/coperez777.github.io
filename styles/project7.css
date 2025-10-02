@@ -88,6 +88,6 @@ p.fixed {
     right: 45px;
     background-color: aquamarine;
     padding: 2em;
-    padding-inline: green;
+    border-radius: 5px;
 
 }
