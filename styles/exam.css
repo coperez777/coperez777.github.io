@@ -1,3 +1,4 @@
+/* BODY */
 body {
   width: 95%;
   margin: 15px auto;
@@ -17,11 +18,9 @@ body {
   overflow: hidden;
   border-bottom: 2px solid #003399;
 }
-
 #nav_menu ul li {
   float: left;
 }
-
 #nav_menu ul li a {
   display: block;
   padding: 12px 40px;
@@ -30,53 +29,54 @@ body {
   font-weight: bold;
   text-align: center;
 }
-
 #nav_menu ul li a.current {
   background-color: #002062;
   color: #ffdd00;
 }
-
 #nav_menu ul li a:hover,
 #nav_menu ul li a:focus {
   background-color: #00153b;
 }
 
-/* ARTICLE */
+/* ARTICLE – make it full width, but leave room on the right */
 article {
-  /* leave space for the fixed aside */
-  width: 72%;
-  float: left;
-  background-color: #ffffff;   /* <<< this keeps text off the tiger */
-  padding: 1rem 1.5rem 2.5rem 1.5rem;
-  border-right: 2px dotted #003399;
-  column-count: 2;
-  column-gap: 2.5rem;
+  width: 100%;
+  /* this is the main fix ↓↓↓ */
+  padding: 1rem 23% 2.5rem 1.5rem;   /* top | right | bottom | left */
+  /* right=23% ≈ the width of the fixed aside + a little gap */
   box-sizing: border-box;
+
+  column-count: 3;                   /* <<< you wanted 3 columns */
+  column-gap: 2.5rem;
+  column-rule: 3px dotted #003399;
+
+  background-color: #ffffff;
   min-height: 600px;
 }
 
+/* headings inside columns */
 article h1 {
   color: #003399;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #003399;
+  column-span: all;   /* keeps the title across all 3 columns */
 }
-
 article h2 {
   color: #003399;
   margin-top: 1rem;
-  break-before: column;
 }
 
-/* Drop cap style from the assignment */
+/* drop-cap style */
 article p::first-letter {
   font-size: 1.8rem;
   font-weight: bold;
   font-style: italic;
 }
 
-/* image in intro – text wraps */
-.intro-img {
+/* intro image */
+.intro-img,
+article img {
   float: left;
   margin: 0 1rem 1rem 0;
   height: 100px;
@@ -85,38 +85,29 @@ article p::first-letter {
 /* ASIDE – fixed on the right */
 aside {
   position: fixed;
-  top: 90px;            /* under the nav */
+  top: 90px;
   right: 2.5%;
-  width: 20%;
-  background-color: rgba(255, 255, 255, 0.95);
+  width: 18%;                        /* keep it under the 23% we padded */
+  background-color: rgba(196, 219, 240, 0.95);
   border: 2px solid #003399;
   padding: 0.75rem 1rem 1rem 1rem;
   box-sizing: border-box;
 }
 
-/* list styles exactly like screenshot */
 aside > ol {
   list-style-type: upper-roman;
   margin-left: 1.25rem;
 }
-
-aside ol li {
-  margin-bottom: 0.4rem;
-}
-
+aside ol li { margin-bottom: 0.4rem; }
 aside ol li ul {
   list-style-type: square;
   margin-left: 1rem;
 }
-
 aside a {
   color: #002062;
   text-decoration: none;
 }
-
-aside a:hover {
-  text-decoration: underline;
-}
+aside a:hover { text-decoration: underline; }
 
 /* FOOTER */
 footer {
@@ -127,29 +118,21 @@ footer {
   margin-top: 2rem;
   background-color: #fff;
 }
-
 footer a {
   color: #003399;
   text-decoration: none;
 }
+footer a:hover { text-decoration: underline; }
 
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* RESPONSIVE – single column when narrow */
+/* RESPONSIVE – on small screens just stack it */
 @media (max-width: 1000px) {
   article {
     column-count: 1;
-    width: 100%;
-    float: none;
-    border-right: none;
+    padding: 1rem;
   }
-
   aside {
     position: static;
     width: 96%;
     margin: 1rem auto;
   }
 }
-
