@@ -43,8 +43,7 @@ article {
   column-count: 3;                  
   column-gap: 2.5rem;
   column-rule: 3px dotted #003399;
-
-  background-color: #ffffff;
+  background-color: transparent;
   min-height: 600px;
 }
 
