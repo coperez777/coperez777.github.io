@@ -1,4 +1,3 @@
-/* BODY */
 body {
   width: 95%;
   margin: 15px auto;
@@ -9,7 +8,6 @@ body {
   background-color: #ffffff;
 }
 
-/* TOP NAV */
 #nav_menu ul {
   list-style-type: none;
   margin: 0;
@@ -38,15 +36,11 @@ body {
   background-color: #00153b;
 }
 
-/* ARTICLE – make it full width, but leave room on the right */
 article {
   width: 100%;
-  /* this is the main fix ↓↓↓ */
-  padding: 1rem 23% 2.5rem 1.5rem;   /* top | right | bottom | left */
-  /* right=23% ≈ the width of the fixed aside + a little gap */
+  padding: 1rem 23% 2.5rem 1.5rem; 
   box-sizing: border-box;
-
-  column-count: 3;                   /* <<< you wanted 3 columns */
+  column-count: 3;                  
   column-gap: 2.5rem;
   column-rule: 3px dotted #003399;
 
@@ -54,27 +48,24 @@ article {
   min-height: 600px;
 }
 
-/* headings inside columns */
 article h1 {
   color: #003399;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #003399;
-  column-span: all;   /* keeps the title across all 3 columns */
+  column-span: all; 
 }
 article h2 {
   color: #003399;
   margin-top: 1rem;
 }
 
-/* drop-cap style */
 article p::first-letter {
   font-size: 1.8rem;
   font-weight: bold;
   font-style: italic;
 }
 
-/* intro image */
 .intro-img,
 article img {
   float: left;
@@ -82,12 +73,11 @@ article img {
   height: 100px;
 }
 
-/* ASIDE – fixed on the right */
 aside {
   position: fixed;
   top: 90px;
   right: 2.5%;
-  width: 18%;                        /* keep it under the 23% we padded */
+  width: 18%;                      
   background-color: rgba(196, 219, 240, 0.95);
   border: 2px solid #003399;
   padding: 0.75rem 1rem 1rem 1rem;
@@ -109,7 +99,6 @@ aside a {
 }
 aside a:hover { text-decoration: underline; }
 
-/* FOOTER */
 footer {
   clear: both;
   text-align: center;
@@ -124,7 +113,6 @@ footer a {
 }
 footer a:hover { text-decoration: underline; }
 
-/* RESPONSIVE – on small screens just stack it */
 @media (max-width: 1000px) {
   article {
     column-count: 1;
