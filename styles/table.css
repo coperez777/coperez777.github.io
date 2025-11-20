@@ -6,7 +6,7 @@ font-size: 100%;
 * {
 font-family: Verdana, Arial, Helvetica, sans-serif;
 }
-/*-----------------------------------------------------------*/
+
 table.first {
     border-collapse: separate;
     border: 2px solid black;    
@@ -17,7 +17,7 @@ table.first th, table.first td {
 table.first tr:nth-child(odd) {
     background-color: lightblue;
 }
-/*-----------------------------------------------------------*/
+
 table.second {    
     border-collapse: collapse; 
     border: 2px solid purple;   
@@ -33,4 +33,50 @@ table.second th, table.second td {
 }
 table.second thead tr:first-child{     
     border-bottom: 2px solid purple;
+}
+table.third {
+    border-collapse: collapse;
+    border: 2px solid orangered;
+    caption-side: bottom;
+}
+
+table.third th {
+    background-color: pink;
+}
+
+table.third th,
+table.third td {
+    padding: 0.7em;
+    vertical-align: top;          
+    border: 2px solid orangered;
+}
+
+
+table.third thead tr:first-child {
+    border-top: 2px solid orangered;
+}
+
+
+table.third tbody tr:nth-child(5) {
+    border-top: 2px solid orangered;
+}
+
+
+table.third tbody tr:last-child {
+    border-bottom: 2px solid orangered;
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    th,
+    td {
+        display: block;
+    }
+
+    thead,
+    td.number {
+        display: none;
+        padding: 0;
+    }
 }
